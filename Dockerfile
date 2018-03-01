@@ -15,7 +15,7 @@ RUN ./vendor.sh
 RUN gb build
 
 
-FROM alpine:3.7.0
+FROM alpine:3.7
 
 COPY --from=builder /src/bin/private_s3_httpd /
 
